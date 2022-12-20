@@ -15,7 +15,7 @@ public sealed class ThreadsHandler
 		Context = context;
 	}
 
-	public async Task LockExample()
+	public void LockExample()
 	{
 		for (int i = 0; i < 10; i++)
 		{
@@ -34,7 +34,7 @@ public sealed class ThreadsHandler
 		}
 	}
 
-	public async Task MonitorExample()
+	public void MonitorExample()
 	{
 		for (int i = 0; i < 10; i++)
 		{
@@ -59,7 +59,7 @@ public sealed class ThreadsHandler
 		}
 	}
 
-	public async Task AutoResetEventExample()
+	public void AutoResetEventExample()
 	{
 		for (int i = 0; i < 10; i++)
 		{
@@ -79,7 +79,7 @@ public sealed class ThreadsHandler
 		AutoResetEventHandler.Set();
 	}
 	
-	public async Task MutexExample()
+	public void MutexExample()
 	{
 		for (int i = 0; i < 10; i++)
 		{
@@ -99,7 +99,7 @@ public sealed class ThreadsHandler
         Mutex.ReleaseMutex();
 	}
 
-	public async Task SemaphoreExample()
+	public void SemaphoreExample()
 	{
 		for (int i = 0; i < 10; i++)
 		{
